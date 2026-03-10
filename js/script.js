@@ -42,8 +42,19 @@
     });
   }
 
+  function disableAllLinks() {
+    var links = document.querySelectorAll('a.outboundLink, a.LeadCreating, .button-red-container a');
+    links.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      });
+    });
+  }
+
   function init() {
     initCookieBanner();
+    disableAllLinks();
   }
 
   if (document.readyState === 'loading') {
