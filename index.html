@@ -9,6 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- GrowthBook AI Bridge — вставте перед закриваючим тегом </head> -->
+<script>
+  window.GB_API_HOST  = "https://qagrowthappai.duckdns.org";
+  window.GB_SDK_KEY   = "sdk-XlI0mmK0nrt7tbC";
+</script>
+
+<!-- GrowthBook SDK (auto bundle): завантажує фічі, ставить window._growthbook -->
+<script async
+        src="https://cdn.jsdelivr.net/npm/@growthbook/growthbook/dist/bundles/auto.min.js"
+        data-client-key="sdk-XlI0mmK0nrt7tbC"
+        data-api-host="https://qagrowthappai.duckdns.org"></script>
+
+<!-- AI bridge (інвентар DOM, трекінг подій, застосування A/B варіантів) -->
+<script src="https://qagrowthappai.duckdns.org/static/ai-bridge.js" defer></script>
 </head>
 <body>
   <header>
@@ -232,12 +246,5 @@
 
   <script src="js/script.js"></script>
   <!-- 1. GrowthBook SDK — з ключами від твого ДО сервера -->
-  <script async
-  src="https://cdn.jsdelivr.net/npm/@growthbook/growthbook/dist/bundles/auto.min.js"
-  data-client-key="sdk-YRxrmf7ZLqPAKoq"
-  data-api-host="https://growthappai.duckdns.org"
-></script>
-<!-- 2. AI Bridge -->
-<script src="https://growthappai.duckdns.org/ai-bridge.js"></script>
 </body>
 </html>
